@@ -7,7 +7,7 @@ from groq import Groq
 load_dotenv()
 
 _client = Groq(api_key=os.environ.get("GROQ_API_KEY"))
-_MODEL = os.environ.get("GROQ_MODEL", "llama-3.3-70b-versatile")
+_MODEL = os.environ.get("GROQ_MODEL", "qwen/qwen3.8-27b")
 
 MAX_RETRIES = 3
 RETRY_DELAY = 2 
